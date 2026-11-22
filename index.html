@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Get Well Soon Favour ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 35px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gold {
+  color: #e5c16b;
+}
+
+.crown {
+  font-size: 65px;
+  animation: glow 2s infinite alternate;
+}
+
+h1 {
+  font-size: clamp(34px, 8vw, 50px);
+  color: #e5c16b;
+  margin: 20px 0;
+  text-shadow: 0 0 15px #c49a3a;
+}
+
+h2 {
+  color: #e5c16b;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  padding: 30px 23px;
+  margin: 25px auto;
+  background: linear-gradient(145deg, #1c1c1c, #090909);
+  border: 1px solid #b48b35;
+  border-radius: 22px;
+  box-shadow: 0 0 25px #b48b3530;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: #d9b45b;
+  margin: 20px auto;
+}
+
+button {
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #f1d58a, #a87920);
+  color: #080808;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #d9b45b;
+}
+
+#surprise {
+  display: none;
+  margin-top: 25px;
+  padding: 15px;
+  color: #f1d58a;
+  animation: appear 1s;
+}
+
+footer {
+  color: #d9b45b;
+  padding: 30px 15px;
+}
+
+.sparkle {
+  position: fixed;
+  bottom: -30px;
+  color: #e5c477;
+  pointer-events: none;
+  animation: float 7s linear forwards;
+  z-index: 0;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #d9b45b; }
+  to { text-shadow: 0 0 30px #e9c66a; }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="crown">👑</div>
+
+<h1>GET WELL SOON ❤️</h1>
+
+<h2>Dear Favour 🖤</h2>
+
+<div class="divider"></div>
+
+<div class="card">
+
+<h2>A Message From The Heart 💌</h2>
+
+<p>
+Hey Favour! ❤️
+</p>
+
+<br>
+
+<p>
+I just want to remind you how special
+you are. Your smile, your laughter
+and your wonderful personality make
+the world a better place.
+</p>
+
+<br>
+
+<p>
+I know things might not be easy right now,
+but I wish you strength, peace,
+happiness and a quick recovery.
+</p>
+
+<br>
+
+<h2>A Little Reminder ✨</h2>
+
+<p>
+Take your time to rest and recover.
+Better days are ahead, and there are
+still plenty of beautiful memories
+waiting for us.
+</p>
+
+<br>
+
+<p>
+And please, don't forget to smile!
+The world is not ready to miss
+that beautiful smile of yours. 😊
+</p>
+
+<div class="divider"></div>
+
+<h2>Something Funny 😂</h2>
+
+<p>
+Favour, how long do you plan
+to stay away from full energy?
+Who will disturb me with gist?
+😂😂
+</p>
+
+<p>
+Please get better soon.
+I still have plenty of laughter
+and memories planned for us!
+</p>
+
+<button onclick="revealMessage()">
+Open Your Special Surprise 💝
+</button>
+
+<div id="surprise">
+
+<h2>JUST FOR YOU, FAVOUR ❤️</h2>
+
+<p>
+No matter what today feels like,
+remember that you are appreciated,
+you are important, and you deserve
+all the beautiful things life has to offer.
+</p>
+
+<br>
+
+<p>
+May each new day bring renewed strength,
+peace and happiness.
+</p>
+
+<br>
+
+<h2>GET WELL SOON, FAVOUR! 🌹</h2>
+
+<div style="font-size:40px">
+🖤 ❤️ ✨ 🌹
+</div>
+
+</div>
+
+</div>
+
+<div style="font-size:30px">
+🖤 ✨ 🌹 ✨ 🖤
+</div>
+
+</section>
+
+<footer>
+
+<div class="divider"></div>
+
+<p>Made with ❤️ and lots of love.</p>
+
+<p>Especially for Favour.</p>
+
+<p class="gold">From: Your Best Friend 🖤</p>
+
+<p>Plus I miss our little conversations</p>
+
+</footer>
+
+<script>
+function revealMessage() {
+  document.getElementById("surprise").style.display = "block";
+}
+
+function createSparkle() {
+  const sparkle = document.createElement("div");
+
+  sparkle.className = "sparkle";
+  sparkle.innerHTML =
+    Math.random() > 0.5 ? "✨" : "❤️";
+
+  sparkle.style.left = Math.random() * 100 + "vw";
+  sparkle.style.fontSize =
+    (15 + Math.random() * 20) + "px";
+
+  sparkle.style.animationDuration =
+    (4 + Math.random() * 5) + "s";
+
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => sparkle.remove(), 9000);
+}
+
+setInterval(createSparkle, 500);
+</script>
+
+</body>
+</html>
